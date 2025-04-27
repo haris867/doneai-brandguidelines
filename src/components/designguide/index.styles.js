@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Title = styled.h1`
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 400;
 `;
 export const Subtitle = styled.h2`
   font-size: 23px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 2rem 0;
 `;
 
@@ -86,7 +86,7 @@ export const ColorBox = styled.div`
 `;
 
 export const ColorName = styled.div`
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 800;
   margin: 10px 0;
   text-align: center;

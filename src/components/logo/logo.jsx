@@ -4,11 +4,11 @@ import { Helmet } from "react-helmet";
 
 export const Title = styled.h1`
   font-size: 30px;
-  font-weight: 900;
+  font-weight: 400;
 `;
 export const Subtitle = styled.h2`
   font-size: 23px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 2rem 0;
 `;
 
@@ -33,13 +33,14 @@ const LogoImage = styled.img`
     max-height: 70px;
   }
 `;
-// const LogoIconImage = styled.img`
-//   max-height: 100px;
 
-//   @media (max-width: 768px) {
-//     max-height: 70px;
-//   }
-// `;
+const LogoIconImage = styled.img`
+  max-height: 100px;
+
+  @media (max-width: 768px) {
+    max-height: 70px;
+  }
+`;
 
 export default function Logo() {
   return (
@@ -52,6 +53,7 @@ export default function Logo() {
       <Bodytext>Coming soon 🫶</Bodytext>
       <ImageContainer>
         <LogoImage src="./images/done-logo.svg" />
+        <LogoIconImage src="./images/done-logo-icon.svg" />
       </ImageContainer>
     </div>
   );

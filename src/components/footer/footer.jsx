@@ -16,16 +16,17 @@ const Container = styled.div`
 `;
 
 const LogoContainerImage = styled.img`
-  max-width: calc(30px + 3vw);
-  max-height: 50px;
+  max-width: calc(50px + 3vw);
+  max-height: 800px;
   margin: 0px 10px;
+  border-radius: 20px;
 `;
 
 const Footer = () => {
   return (
     <FooterWrapper>
       <Container>
-        <LogoContainerImage src="./images/done-logo.svg"></LogoContainerImage>
+        <LogoContainerImage src="./images/logo-touch-icon.png"></LogoContainerImage>
       </Container>
     </FooterWrapper>
   );

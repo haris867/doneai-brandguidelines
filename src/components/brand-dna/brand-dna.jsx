@@ -4,11 +4,11 @@ import { Helmet } from "react-helmet";
 
 export const Title = styled.h1`
   font-size: 30px;
-  font-weight: 900;
+  font-weight: 400;
 `;
 export const Subtitle = styled.h2`
   font-size: 23px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 2rem 0;
 `;
 
