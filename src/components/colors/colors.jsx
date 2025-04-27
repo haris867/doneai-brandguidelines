@@ -1,7 +1,7 @@
 import React from "react";
 import theme from "../../theme/theme.jsx";
 import * as S from "./index.styles.js";
-import styled from "styled-components";
+// import styled from "styled-components";
 import { Helmet } from "react-helmet";
 
 // const LogoColorContainer = styled.div`
