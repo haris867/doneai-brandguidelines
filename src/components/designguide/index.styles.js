@@ -109,10 +109,16 @@ export const TitleColorsContainer = styled(ColorsContainer)`
   gap: 100px;
 `;
 
+export const ColorTitle = styled.h4`
+  text-align: center;
+`;
+
 export const FontBox = styled.div`
   display: flex;
   gap: 2rem;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 `;
 export const FontLetters = styled.div`
   display: flex;

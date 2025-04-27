@@ -42,7 +42,7 @@ export default function Designguide() {
         <S.SubSubtitle>Main colors</S.SubSubtitle>
         <S.TitleColorsContainer>
           <div>
-            <h4>Primary color</h4>
+            <S.ColorTitle>Primary</S.ColorTitle>
             <S.ColorsContainer>
               <S.ColorBoxWrapper>
                 <S.ColorBox color={theme.colors.primary.hex} />
@@ -53,7 +53,7 @@ export default function Designguide() {
             </S.ColorsContainer>
           </div>
           <div>
-            <h4>Secondary color</h4>
+            <S.ColorTitle>Secondary</S.ColorTitle>
             <S.ColorsContainer>
               <S.ColorBoxWrapper>
                 <S.ColorBox color={theme.colors.secondary.hex} />
@@ -172,7 +172,7 @@ export default function Designguide() {
         <S.FontBox
           style={{
             fontWeight: 500,
-            fontFamily: "Inter, sans-serif",
+            fontFamily: "Open Sans, sans-serif",
             padding: "1rem 0",
           }}
         >
@@ -191,7 +191,7 @@ export default function Designguide() {
         <S.FontBox
           style={{
             fontWeight: 600,
-            fontFamily: "Inter, sans-serif",
+            fontFamily: "Open Sans, sans-serif",
             padding: "1rem 0",
           }}
         >
@@ -210,7 +210,7 @@ export default function Designguide() {
         <S.FontBox
           style={{
             fontWeight: 800,
-            fontFamily: "Inter, sans-serif",
+            fontFamily: "Open Sans, sans-serif",
             padding: "1rem 0",
           }}
         >
