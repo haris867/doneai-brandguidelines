@@ -4,49 +4,49 @@ import * as S from "./index.styles.js";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 
-const LogoColorContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 35px;
-  margin-bottom: 3rem;
+// const LogoColorContainer = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   gap: 35px;
+//   margin-bottom: 3rem;
 
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-`;
+//   @media (max-width: 768px) {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// `;
 
-const LogoColorBox = styled.div`
-  height: 150px;
-  width: 150px;
-  background-color: ${({ bgColor }) => bgColor};
+// const LogoColorBox = styled.div`
+//   height: 150px;
+//   width: 150px;
+//   background-color: ${({ bgColor }) => bgColor};
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  margin: 0 auto;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 50px;
+//   margin: 0 auto;
 
-  @media (max-width: 768px) {
-    height: 100px;
-    width: 100px;
-    border-radius: 30px;
-  }
-`;
-const LogoColor = styled.svg`
-  max-width: 100px;
-  max-height: 80px;
-  .path-fill {
-    fill: ${({ fillColor }) => fillColor || "white"};
-  }
-  .path-stroke {
-    stroke: ${({ strokeColor }) => strokeColor || "white"};
-  }
+//   @media (max-width: 768px) {
+//     height: 100px;
+//     width: 100px;
+//     border-radius: 30px;
+//   }
+// `;
+// const LogoColor = styled.svg`
+//   max-width: 100px;
+//   max-height: 80px;
+//   .path-fill {
+//     fill: ${({ fillColor }) => fillColor || "white"};
+//   }
+//   .path-stroke {
+//     stroke: ${({ strokeColor }) => strokeColor || "white"};
+//   }
 
-  @media (max-width: 768px) {
-    max-width: 60px;
-    max-height: 40px;
-  }
-`;
+//   @media (max-width: 768px) {
+//     max-width: 60px;
+//     max-height: 40px;
+//   }
+// `;
 
 export default function Colors() {
   const colors = Object.keys(theme.colors);

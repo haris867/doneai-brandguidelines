@@ -33,13 +33,13 @@ const LogoImage = styled.img`
     max-height: 70px;
   }
 `;
-const LogoIconImage = styled.img`
-  max-height: 100px;
+// const LogoIconImage = styled.img`
+//   max-height: 100px;
 
-  @media (max-width: 768px) {
-    max-height: 70px;
-  }
-`;
+//   @media (max-width: 768px) {
+//     max-height: 70px;
+//   }
+// `;
 
 export default function Logo() {
   return (
