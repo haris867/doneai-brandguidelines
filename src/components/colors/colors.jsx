@@ -91,6 +91,9 @@ export default function Colors() {
           </S.GradientContainer>
         </S.ColorsContainer>
         <S.SubSubtitle>Interactive</S.SubSubtitle>
+        <S.Bodytext>
+          Drag your mouse across the container for some digital ✨magic✨
+        </S.Bodytext>
         <div className="div-block-33">
           <div className="gradient-bg">
             <svg xmlns="http://www.w3.org/2000/svg">
@@ -126,7 +129,7 @@ export default function Colors() {
         </div>
       </S.Section>
       <S.Section>
-        <S.Subtitle>Combinations</S.Subtitle>
+        <S.Subtitle>Color combinations</S.Subtitle>
         <S.Bodytext>Coming soon 🫶</S.Bodytext>
       </S.Section>
     </div>

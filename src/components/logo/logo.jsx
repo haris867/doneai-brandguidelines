@@ -9,12 +9,12 @@ export default function Logo() {
         <title>Logo | Done.ai</title>
       </Helmet>
       <S.Title>Logo</S.Title>
-      <S.Subtitle>About our logo</S.Subtitle>
-      <S.Bodytext>Coming soon 🫶</S.Bodytext>
       <S.ImageContainer>
         <S.LogoImage src="./images/done-logo.svg" />
         <S.LogoImage src="./images/done-logo-icon.svg" />
       </S.ImageContainer>
+      <S.Subtitle>About our logo</S.Subtitle>
+      <S.Bodytext>Coming soon 🫶</S.Bodytext>
     </div>
   );
 }
