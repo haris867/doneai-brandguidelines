@@ -1,60 +1,53 @@
 import React from "react";
 import theme from "../../theme/theme.jsx";
 import * as S from "./index.styles.js";
-// import styled from "styled-components";
-import { Helmet } from "react-helmet";
-
-// const LogoColorContainer = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(4, 1fr);
-//   gap: 35px;
-//   margin-bottom: 3rem;
-
-//   @media (max-width: 768px) {
-//     grid-template-columns: repeat(2, 1fr);
-//   }
-// `;
-
-// const LogoColorBox = styled.div`
-//   height: 150px;
-//   width: 150px;
-//   background-color: ${({ bgColor }) => bgColor};
-
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   border-radius: 50px;
-//   margin: 0 auto;
-
-//   @media (max-width: 768px) {
-//     height: 100px;
-//     width: 100px;
-//     border-radius: 30px;
-//   }
-// `;
-// const LogoColor = styled.svg`
-//   max-width: 100px;
-//   max-height: 80px;
-//   .path-fill {
-//     fill: ${({ fillColor }) => fillColor || "white"};
-//   }
-//   .path-stroke {
-//     stroke: ${({ strokeColor }) => strokeColor || "white"};
-//   }
-
-//   @media (max-width: 768px) {
-//     max-width: 60px;
-//     max-height: 40px;
-//   }
-// `;
+import { Helmet } from "react-helmet-async";
+import "./gradient.css";
+import { useEffect } from "react";
 
 export default function Colors() {
   const colors = Object.keys(theme.colors);
 
+  useEffect(() => {
+    const interBubble = document.querySelector(".div-block-33 .interactive");
+    const container = document.querySelector(".div-block-33");
+
+    let curX = 0;
+    let curY = 0;
+    let tgX = 0;
+    let tgY = 0;
+
+    function move() {
+      if (interBubble) {
+        curX += (tgX - curX) / 20;
+        curY += (tgY - curY) / 20;
+        interBubble.style.transform = `translate(${Math.round(
+          curX
+        )}px, ${Math.round(curY)}px)`;
+      }
+      requestAnimationFrame(move);
+    }
+
+    const mouseMoveHandler = (event) => {
+      if (container) {
+        const rect = container.getBoundingClientRect();
+        tgX = event.clientX - rect.left;
+        tgY = event.clientY - rect.top;
+      }
+    };
+
+    window.addEventListener("mousemove", mouseMoveHandler);
+    move();
+
+    return () => {
+      window.removeEventListener("mousemove", mouseMoveHandler);
+    };
+  }, []);
+
   return (
     <div>
       <Helmet>
-        <title>Done.ai | Colors</title>
+        <title>Colors | Done.ai</title>
       </Helmet>
       <S.Title>Ours Colors</S.Title>
       <S.Section>
@@ -77,6 +70,61 @@ export default function Colors() {
             </S.ColorBoxWrapper>
           ))}
         </S.ColorsContainer>
+      </S.Section>
+      <S.Section>
+        <S.Subtitle>Gradient background</S.Subtitle>
+        <S.Bodytext>Coming soon 🫶</S.Bodytext>
+        <S.ColorsContainer>
+          <S.GradientContainer>
+            <S.SubSubtitle>Image</S.SubSubtitle>
+            <S.Image src="./images/gradient.jpg" />
+          </S.GradientContainer>
+          <S.GradientContainer>
+            <S.SubSubtitle>Video</S.SubSubtitle>
+            <S.Video
+              autoplay=""
+              loop=""
+              playsinline=""
+              muted
+              src="./assets/gradient.mp4"
+              class="sc-kgEbbF bggKPR"
+            ></S.Video>
+          </S.GradientContainer>
+        </S.ColorsContainer>
+        <S.SubSubtitle>Interactive</S.SubSubtitle>
+        <div className="div-block-33">
+          <div class="gradient-bg">
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur
+                    in="SourceGraphic"
+                    stdDeviation="10"
+                    result="blur"
+                  />
+                  <feColorMatrix
+                    in="blur"
+                    mode="matrix"
+                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                    result="goo"
+                  />
+                  <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+              </defs>
+            </svg>
+
+            <div class="gradients-container-box">
+              <div class="gradients-container">
+                <div class="g1"></div>
+                <div class="g2"></div>
+                <div class="g3"></div>
+                <div class="g4"></div>
+                <div class="g5"></div>
+                <div class="interactive"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </S.Section>
       <S.Section>
         <S.Subtitle>Combinations</S.Subtitle>

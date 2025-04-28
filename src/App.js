@@ -21,8 +21,9 @@ const AppWrapper = styled.div`
 
 const ContentWrapper = styled.div`
   margin-left: 250px;
-  padding: 1rem 23rem 1rem 2rem;
+  padding: 1rem 2rem;
   flex-grow: 1;
+  max-width: 900px;
 
   @media (max-width: 768px) {
     margin-left: 0;
@@ -80,7 +81,7 @@ const App = () => {
           <Sidebar />
           <ContentWrapper>
             <Routes>
-              <Route path="/" exact element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/brand-dna" element={<BrandDNA />} />
               <Route path="/logo" element={<Logo />} />
               <Route path="/colors" element={<Colors />} />

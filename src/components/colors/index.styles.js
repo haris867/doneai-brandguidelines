@@ -1,19 +1,69 @@
 import styled from "styled-components";
+export {
+  Title,
+  Subtitle,
+  SubSubtitle,
+  Bodytext,
+} from "../commonStyles/index.js";
 
-export const Title = styled.h1`
-  font-size: 30px;
-  font-weight: 400;
-`;
-export const Subtitle = styled.h2`
-  font-size: 23px;
-  font-weight: 500;
-  padding: 2rem 0;
+// const LogoColorContainer = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   gap: 35px;
+//   margin-bottom: 3rem;
+
+//   @media (max-width: 768px) {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// `;
+
+// const LogoColorBox = styled.div`
+//   height: 150px;
+//   width: 150px;
+//   background-color: ${({ bgColor }) => bgColor};
+
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 50px;
+//   margin: 0 auto;
+
+//   @media (max-width: 768px) {
+//     height: 100px;
+//     width: 100px;
+//     border-radius: 30px;
+//   }
+// `;
+// const LogoColor = styled.svg`
+//   max-width: 100px;
+//   max-height: 80px;
+//   .path-fill {
+//     fill: ${({ fillColor }) => fillColor || "white"};
+//   }
+//   .path-stroke {
+//     stroke: ${({ strokeColor }) => strokeColor || "white"};
+//   }
+
+//   @media (max-width: 768px) {
+//     max-width: 60px;
+//     max-height: 40px;
+//   }
+// `;
+
+export const GradientContainer = styled.div`
+  width: 45%;
 `;
 
-export const Bodytext = styled.p`
-  font-size: 15px;
-  padding-bottom: 2rem;
-  font-weight: 300;
+export const Image = styled.img`
+  max-width: 100%;
+  border-radius: 30px;
+`;
+
+export const Video = styled.video`
+  width: 100%;
+  border-radius: 30px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 `;
 
 export const Section = styled.div`

@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import theme from "../../theme/theme.jsx";
 import * as S from "./index.styles.js";
 
@@ -7,7 +7,7 @@ export default function Designguide() {
   return (
     <div>
       <Helmet>
-        <title>Done.ai | Design Guide</title>
+        <title>Design Guide | Done.ai</title>
       </Helmet>
       <S.Title>Our Design Guide</S.Title>
       <S.Section>
@@ -21,12 +21,12 @@ export default function Designguide() {
         </S.ImageContainer>
         <S.SubSubtitle>Icon</S.SubSubtitle>
         <S.ImageContainer>
-          <S.LogoIconImage
+          <S.LogoImage
             src="./images/done-logo-icon.svg"
             alt="Done.ai icon logo"
           />
           <S.LightImageContainer>
-            <S.LogoIconImage
+            <S.LogoImage
               src="./images/done-logo-icon-white.svg"
               alt="Done.ai icon logo"
             />

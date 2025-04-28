@@ -28,7 +28,7 @@ const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   padding: 0.5rem;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 15px;
 
   &.active {
     font-weight: 700;
@@ -41,15 +41,14 @@ const StyledNavLink = styled(NavLink)`
   @media (max-width: 768px) {
     display: inline-block;
     padding: 0.5rem 1rem;
+    font-size: 14px;
   }
 `;
 
 const Sidebar = () => {
   return (
     <SidebarWrapper>
-      <StyledNavLink to="/" exact>
-        Welcome
-      </StyledNavLink>
+      <StyledNavLink to="/">Welcome</StyledNavLink>
       <StyledNavLink to="/brand-dna">Brand DNA</StyledNavLink>
       <StyledNavLink to="/logo">Logo</StyledNavLink>
       <StyledNavLink to="/colors">Colors</StyledNavLink>
