@@ -82,18 +82,17 @@ export default function Colors() {
           <S.GradientContainer>
             <S.SubSubtitle>Video</S.SubSubtitle>
             <S.Video
-              autoplay=""
+              autoPlay=""
               loop=""
-              playsinline=""
+              playsInline=""
               muted
               src="./assets/gradient.mp4"
-              class="sc-kgEbbF bggKPR"
             ></S.Video>
           </S.GradientContainer>
         </S.ColorsContainer>
         <S.SubSubtitle>Interactive</S.SubSubtitle>
         <div className="div-block-33">
-          <div class="gradient-bg">
+          <div className="gradient-bg">
             <svg xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <filter id="goo">
@@ -113,14 +112,14 @@ export default function Colors() {
               </defs>
             </svg>
 
-            <div class="gradients-container-box">
-              <div class="gradients-container">
-                <div class="g1"></div>
-                <div class="g2"></div>
-                <div class="g3"></div>
-                <div class="g4"></div>
-                <div class="g5"></div>
-                <div class="interactive"></div>
+            <div className="gradients-container-box">
+              <div className="gradients-container">
+                <div className="g1"></div>
+                <div className="g2"></div>
+                <div className="g3"></div>
+                <div className="g4"></div>
+                <div className="g5"></div>
+                <div className="interactive"></div>
               </div>
             </div>
           </div>
