@@ -82,9 +82,9 @@ export default function Colors() {
           <S.GradientContainer>
             <S.SubSubtitle>Video</S.SubSubtitle>
             <S.Video
-              autoPlay=""
-              loop=""
-              playsInline=""
+              autoPlay
+              loop
+              playsInline
               muted
               src="./assets/gradient.mp4"
             ></S.Video>
