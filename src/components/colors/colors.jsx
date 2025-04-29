@@ -49,7 +49,7 @@ export default function Colors() {
       <Helmet>
         <title>Colors | Done.ai</title>
       </Helmet>
-      <S.Title>Ours Colors</S.Title>
+      <S.Title>Our Colors</S.Title>
       <S.Section>
         <S.Subtitle>Palette</S.Subtitle>
         <S.Bodytext>
