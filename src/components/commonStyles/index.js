@@ -24,7 +24,6 @@ export const Subtitle = styled.h2`
 export const SubSubtitle = styled.h3`
   font-size: 20px;
   font-weight: 500;
-  text-decoration: underline;
 
   @media (min-width: 768px) {
     font-size: 21px;
@@ -38,6 +37,74 @@ export const Bodytext = styled.p`
 
   @media (min-width: 768px) {
     font-size: 16px;
+  }
+`;
+
+export const HomeTextContainer = styled.div`
+  position: absolute;
+  z-index: 10;
+  color: #fbfbfb;
+  max-width: 900px;
+
+  & > h1 {
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
+  }
+  & > p {
+    margin: 0 auto;
+    font-size: 18px;
+    width: 70%;
+  }
+
+  @media (min-width: 768px) {
+    padding: 0px;
+  }
+`;
+
+export const LogoCatchPhrase = styled.span`
+  font-weight: 600;
+  font-size: inherit;
+  &:before {
+    content: " ";
+  }
+`;
+
+const DoneContainer = styled.span`
+  margin-left: 2px;
+`;
+
+const StyledN = styled.span`
+  margin: 0 -0.5px;
+  font-family: "Open Sans";
+  font-size: 0.9em;
+  font-weight: 700;
+`;
+
+const StyledTM = styled.sup`
+  font-size: 8px;
+`;
+
+export const DoneTM = () => (
+  <DoneContainer>
+    do
+    <StyledN>п</StyledN>e<StyledTM>™</StyledTM>
+  </DoneContainer>
+);
+
+export const FlexContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+
+  & > div {
+    flex: 1 1 100%;
+  }
+
+  @media (min-width: 768px) {
+    & > div {
+      flex: 1 1 calc(45%);
+    }
   }
 `;
 
