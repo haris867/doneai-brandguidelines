@@ -113,12 +113,12 @@ export default function Home() {
       {/* <LogoBox>
         <LogoContainerImage src="./images/done-logo.svg"></LogoContainerImage>
       </LogoBox> */}
-      <S.Bodytext style={{ padding: "0 0.3em" }}>
-        These guidelines are an instruction manual explaining how we present
-        ourselves to the world as an organisation and brand. It's our rule book
-        on communicating consistently across all channels, and defines visual,
-        verbal, and written communication frameworks and set the foundation for
-        our brand to grow and thrive.
+      <S.Bodytext style={{ padding: "0 0.3em", fontSize: "17px" }}>
+        This is an instruction manual explaining how we present ourselves to the
+        world as an organisation and brand. It's our rule book on communicating
+        consistently across all channels, and defines visual, verbal, and
+        written communication frameworks and set the foundation for our brand to
+        grow and thrive.
       </S.Bodytext>
     </div>
   );
