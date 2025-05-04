@@ -40,22 +40,22 @@ export const Bodytext = styled.p`
   }
 `;
 
-export const HomeTextContainer = styled.div`
+export const HomeTitleContainer = styled.div`
   position: absolute;
   z-index: 10;
   color: #fbfbfb;
-  max-width: 900px;
 
   & > h1 {
     font-weight: 600;
     margin: 0 auto;
+    padding-bottom: 0;
     text-align: center;
   }
-  & > p {
-    margin: 0 auto;
-    font-size: 18px;
-    width: 70%;
-  }
+  // & > p {
+  //   margin: 0 auto;
+  //   font-size: 18px;
+  //   width: 70%;
+  // }
 
   @media (min-width: 768px) {
     padding: 0px;

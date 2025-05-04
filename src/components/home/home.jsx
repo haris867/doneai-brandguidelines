@@ -4,6 +4,21 @@ import * as S from "../commonStyles/index.js";
 import styled from "styled-components";
 import { useEffect } from "react";
 
+// const LogoBox = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   position: absolute;
+//   width: 100%;
+// `;
+
+// const LogoContainerImage = styled.img`
+//   max-width: calc(120px + 3vw);
+//   max-height: 100px;
+//   margin: 0px 10px;
+//   position: relative;
+//   bottom: 100px;
+// `;
+
 const Title = styled(S.Title)`
   padding-bottom: 2rem;
 `;
@@ -46,53 +61,65 @@ export default function Home() {
   }, []);
 
   return (
-    <div style={{ display: "flex", alignItems: "center" }}>
+    <div>
       <Helmet>
         <title>Brand Guidelines | Done.ai</title>
       </Helmet>
-      <S.HomeTextContainer>
-        <Title>Welcome to our Brand Guidelines</Title>
-        <S.Bodytext>
-          Our guidelines are an instruction manual explaining how we present
-          ourselves to the world as an organisation and brand. It's our rule
-          book on communicating consistently across all channels, and defines
-          visual, verbal, and written communication frameworks and set the
-          foundation for our brand to grow and thrive.
-        </S.Bodytext>
-      </S.HomeTextContainer>
-      <div className="div-block-33">
-        <div className="gradient-bg">
-          <svg xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <filter id="goo">
-                <feGaussianBlur
-                  in="SourceGraphic"
-                  stdDeviation="10"
-                  result="blur"
-                />
-                <feColorMatrix
-                  in="blur"
-                  mode="matrix"
-                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                  result="goo"
-                />
-                <feBlend in="SourceGraphic" in2="goo" />
-              </filter>
-            </defs>
-          </svg>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <S.HomeTitleContainer>
+          <Title>Welcome to our Brand Guidelines</Title>
+        </S.HomeTitleContainer>
 
-          <div className="gradients-container-box">
-            <div className="gradients-container">
-              <div className="g1"></div>
-              <div className="g2"></div>
-              <div className="g3"></div>
-              <div className="g4"></div>
-              <div className="g5"></div>
-              <div className="interactive"></div>
+        <div className="div-block-33">
+          <div className="gradient-bg">
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur
+                    in="SourceGraphic"
+                    stdDeviation="10"
+                    result="blur"
+                  />
+                  <feColorMatrix
+                    in="blur"
+                    mode="matrix"
+                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                    result="goo"
+                  />
+                  <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+              </defs>
+            </svg>
+
+            <div className="gradients-container-box">
+              <div className="gradients-container">
+                <div className="g1"></div>
+                <div className="g2"></div>
+                <div className="g3"></div>
+                <div className="g4"></div>
+                <div className="g5"></div>
+                <div className="interactive"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      {/* <LogoBox>
+        <LogoContainerImage src="./images/done-logo.svg"></LogoContainerImage>
+      </LogoBox> */}
+      <S.Bodytext style={{ padding: "0 0.3em" }}>
+        These guidelines are an instruction manual explaining how we present
+        ourselves to the world as an organisation and brand. It's our rule book
+        on communicating consistently across all channels, and defines visual,
+        verbal, and written communication frameworks and set the foundation for
+        our brand to grow and thrive.
+      </S.Bodytext>
     </div>
   );
 }
