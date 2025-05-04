@@ -7,6 +7,8 @@ export {
   ImageContainer,
   LightImageContainer,
   LogoImage,
+  LogoCatchPhrase,
+  DoneTM,
 } from "../commonStyles/index.js";
 
 export const Section = styled.div`

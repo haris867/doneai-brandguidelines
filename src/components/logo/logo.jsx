@@ -14,7 +14,18 @@ export default function Logo() {
         <S.LogoImage src="./images/done-logo-icon.svg" />
       </S.ImageContainer>
       <S.Subtitle>About our logo</S.Subtitle>
-      <S.Bodytext>Coming soon 🫶</S.Bodytext>
+      <S.Bodytext style={{ display: "inline-block" }}>
+        <S.LogoCatchPhrase
+          style={{
+            display: "inline-block",
+            transform: "scale(1.2)",
+            transformOrigin: "left",
+          }}
+        >
+          Soon to be
+          <S.DoneTM />
+        </S.LogoCatchPhrase>
+      </S.Bodytext>
     </div>
   );
 }

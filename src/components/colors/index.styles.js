@@ -4,6 +4,8 @@ export {
   Subtitle,
   SubSubtitle,
   Bodytext,
+  LogoCatchPhrase,
+  DoneTM,
 } from "../commonStyles/index.js";
 
 // const LogoColorContainer = styled.div`

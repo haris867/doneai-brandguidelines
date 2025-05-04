@@ -120,6 +120,18 @@ export default function Home() {
         written communication frameworks and set the foundation for our brand to
         grow and thrive.
       </S.Bodytext>
+      <S.Bodytext style={{ display: "inline-block" }}>
+        <S.LogoCatchPhrase
+          style={{
+            display: "inline-block",
+            transform: "scale(1.2)",
+            transformOrigin: "left",
+          }}
+        >
+          Soon to be
+          <S.DoneTM />
+        </S.LogoCatchPhrase>
+      </S.Bodytext>
     </div>
   );
 }

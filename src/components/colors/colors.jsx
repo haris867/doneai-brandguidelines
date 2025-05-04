@@ -73,7 +73,18 @@ export default function Colors() {
       </S.Section>
       <S.Section>
         <S.Subtitle>Gradient background</S.Subtitle>
-        <S.Bodytext>Coming soon 🫶</S.Bodytext>
+        <S.Bodytext style={{ display: "inline-block" }}>
+          <S.LogoCatchPhrase
+            style={{
+              display: "inline-block",
+              transform: "scale(1.2)",
+              transformOrigin: "left",
+            }}
+          >
+            Soon to be
+            <S.DoneTM />
+          </S.LogoCatchPhrase>
+        </S.Bodytext>
         <S.ColorsContainer>
           <S.GradientContainer>
             <S.SubSubtitle>Image</S.SubSubtitle>
@@ -130,7 +141,18 @@ export default function Colors() {
       </S.Section>
       <S.Section>
         <S.Subtitle>Color combinations</S.Subtitle>
-        <S.Bodytext>Coming soon 🫶</S.Bodytext>
+        <S.Bodytext style={{ display: "inline-block" }}>
+          <S.LogoCatchPhrase
+            style={{
+              display: "inline-block",
+              transform: "scale(1.2)",
+              transformOrigin: "left",
+            }}
+          >
+            Soon to be
+            <S.DoneTM />
+          </S.LogoCatchPhrase>
+        </S.Bodytext>
       </S.Section>
     </div>
   );
