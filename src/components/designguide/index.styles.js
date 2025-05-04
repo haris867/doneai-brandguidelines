@@ -7,6 +7,7 @@ export {
   ImageContainer,
   LightImageContainer,
   LogoImage,
+  LogoIconImage,
   LogoCatchPhrase,
   DoneTM,
 } from "../commonStyles/index.js";

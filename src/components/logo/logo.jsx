@@ -11,7 +11,7 @@ export default function Logo() {
       <S.Title>Logo</S.Title>
       <S.ImageContainer>
         <S.LogoImage src="./images/done-logo.svg" />
-        <S.LogoImage src="./images/done-logo-icon.svg" />
+        <S.LogoIconImage src="./images/done-logo-icon.svg" />
       </S.ImageContainer>
       <S.Subtitle>About our logo</S.Subtitle>
       <S.Bodytext style={{ display: "inline-block" }}>

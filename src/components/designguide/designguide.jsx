@@ -21,12 +21,12 @@ export default function Designguide() {
         </S.ImageContainer>
         <S.SubSubtitle>Icon</S.SubSubtitle>
         <S.ImageContainer>
-          <S.LogoImage
+          <S.LogoIconImage
             src="./images/done-logo-icon.svg"
             alt="Done.ai icon logo"
           />
           <S.LightImageContainer>
-            <S.LogoImage
+            <S.LogoIconImage
               src="./images/done-logo-icon-white.svg"
               alt="Done.ai icon logo"
             />

@@ -127,9 +127,8 @@ export const LightImageContainer = styled.div`
 `;
 
 export const LogoImage = styled.img`
-  max-height: 100px;
-
-  @media (max-width: 768px) {
-    max-height: 70px;
-  }
+  max-height: 70px;
+`;
+export const LogoIconImage = styled.img`
+  max-height: 54px;
 `;
